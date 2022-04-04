@@ -62,7 +62,7 @@ private fun createHeaderInterceptor(): Interceptor {
 
 private fun createHttpLoggingInterceptor(): Interceptor {
     return HttpLoggingInterceptor().apply {
-        level = HttpLoggingInterceptor.Level.BASIC
+        level = HttpLoggingInterceptor.Level.BODY
         redactHeader("Authorization")
     }
 }
